@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    width: 100%;
+    color: purple;
+
+}
+
+.container{
+    width:80%;
+    margin: 40px auto;
+    min-height: 75vh;
+    background-color: lightcyan;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    line-height: 1.6rem;
+    word-spacing: 0.2rem;
+    border: 3px solid gray;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.container h2{
+    text-align: center;
+    padding: 0.5rem 0;
+    line-height: 2rem;
+
+}
+
+.container p{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.section{
+    margin: 20px auto;
+    font-weight: bolder;
+}
+
+.section div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.section div label{
+    flex: 1;
+
+}
+
+.section div input{
+    flex: 1;
+    width: 100%;
+    height: 2rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+    color: purple;
+}
+
+.button{
+    padding-top: 10px;
+}
+
+#button{
+    width: 50%;
+    height: 2rem;
+    margin: auto;
+    border-radius: 10px;
+    color:purple;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    background: #c3e4e5;
+    cursor: pointer;
+}
+
+.span{
+    color: red;
+}
+
+@media (max-width: 600px){
+
+        .container{
+            font-size: 0.8rem;
+     }
+
+        .section div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        padding: 10px 0;
+    }
+
+        .section div input{
+        font-weight: normal;
+        border-radius: 5px;
+        font-size: 1rem
+    }
+
+        #button{
+        width: 100%;
+    }
+
+}
