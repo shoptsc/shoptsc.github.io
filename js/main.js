@@ -17,8 +17,7 @@ function symbolPower(value){
     return value + ' J/S';
 }
 
-function calculate(e){
-    e.preventDefault();
+function calculate(){
     let mass = document.getElementById('mass').value;
     let accelerate = document.getElementById('speed').value;
     let distance = document.getElementById('dist').value;
