@@ -90,6 +90,8 @@ html{
 
         .container{
             font-size: 0.8rem;
+            margin: 5px auto;
+            padding: auto;
      }
 
         .section div{
