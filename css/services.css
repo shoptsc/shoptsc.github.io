@@ -1,0 +1,74 @@
+@import "main.css";
+
+.content{
+    width: 100%;
+    min-height: 100vh;
+    margin: 50px auto;
+    position: relative;
+    background: #708090;
+    padding: 3rem 0 4rem;
+}
+
+.content-1{
+    width: 80%;
+    min-height: 25vh;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.right{
+    width: 40%;
+    float: right
+}
+
+.left{
+    width: 40%;
+    float: left;
+
+}
+
+.content-1 img{
+    width: 100%;
+    border-radius: 50px;
+}
+
+.vertical{
+    border-left: 6px dotted #f4f4f4;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.text{
+    padding-top: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #f4f4f4;
+    line-height: 1rem;
+}
+
+
+@media (min-width: 750px){
+
+    .content-1{
+        width: 50%;
+        min-height: 50vh;
+        margin: auto;
+        padding: 50px 0;
+    }
+
+    .content-1 img{
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    .text.left{
+        text-align: right;
+    }
+
+    .text.right{
+        text-align: left;
+    }
+
+}

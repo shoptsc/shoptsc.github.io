@@ -1,0 +1,58 @@
+@import "main.css";
+
+.content{
+    width: 100%;
+    background-color: #708090;
+    padding-top: 100px;
+}
+
+.content-images{
+    width: 100%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.content-images img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.content-images .text{
+    text-align: center;
+    color: #f4f4f4;
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.5rem;
+}
+
+@media (min-width: 750px){
+
+  .content{
+    display: grid;
+    grid-template-columns : 1fr 1fr;
+    justify-content: center;
+    align-content: baseline;
+    margin:auto;
+  }
+
+
+    .content-images{
+        width: 90%;
+        min-height: 50vh;
+        padding-bottom: 80px;
+    }
+
+    .content-images img{
+        height: 50vh;
+    }
+
+}
+
+@media (min-width: 1000px){
+
+      .content{
+    display: grid;
+    grid-template-columns : 1fr 1fr 1fr 1fr;
+  }
+
+}
