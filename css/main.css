@@ -7,7 +7,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        line-height: 1.5rem;
+        line-height: 2rem;
     }
 
     .container{
@@ -264,6 +264,7 @@
         color: #b22222;
         text-decoration: none;
         font-size: 0.9rem;
+        
     }
 
     .content-1 .box-3 .link a:hover{
