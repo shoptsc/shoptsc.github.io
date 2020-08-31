@@ -1,2 +1,3 @@
 # shoptsc.github.io
-A calculator for calculating power
+This contains a fashion store website... This is my first project please feel free to help make any changes incase there is any... 
+tool used: HTML, CSS and JAVASCRIPT.
