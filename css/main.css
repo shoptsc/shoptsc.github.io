@@ -1,12 +1,11 @@
-
     html{
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         background: #f4f4f4;
         font-weight: 400;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        line-height: 2rem;
+        line-height: 1.5rem;
     }
 
     .container{
@@ -21,7 +20,6 @@
         min-height: 25vh;
         padding:0;
         background:#444;
-        line-height: 1.5rem;
     }
 
     .header .navbar ul{
@@ -30,9 +28,8 @@
 
     .header .stroke{
         background: #444;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        margin-left: 50px;
+        padding: 5px 0;
+        margin-left: 10px;
     }
 
     .header .stroke a{
@@ -41,7 +38,7 @@
     }
 
     .header .stroke a:hover{
-        color: blue;
+        color: yellow;
     }
 
     .header .navbar-2{
@@ -52,20 +49,17 @@
         opacity: 0.6;
         overflow-x: hidden;
         transition: 0.9s;
-        margin-left: 10px;
-
     }
 
     .navbar-2 ul{
-         width: 80%;
+         width: 100%;
          min-height: 25vh;
          margin-bottom: 1rem;
-         border-radius: 30px;
+         padding-left: 10px;
     }
 
     .navbar-2 li{
         list-style-type: none;
-
     }
 
     .header .navbar-2 a{
@@ -74,12 +68,12 @@
         text-decoration: none;
         text-transform: uppercase;
         font-size: 0.6rem;
-        padding: 20px 0 20px;
+        padding: 20px 0;
         border-bottom: 3px solid #b22222;
     }
 
     .header .navbar-2 a:hover{
-        color: blue;
+        color: yellow;
     }
 
     .header .button-close{
@@ -154,7 +148,7 @@
     .header .logo{
         text-align: center;
         position: absolute;
-        top:25%;
+        top:50%;
         left: 50%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
@@ -172,7 +166,7 @@
     .header .small-logo{
         text-align: center;
         position: absolute;
-        top:90%;
+        top:120%;
         left: 50%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
@@ -200,6 +194,7 @@
     }
 
     .content-1 .box-1 p{
+        font-family: 'Kaushan Script', cursive;
         padding: 10px 20px 50px;
         color: #708090;
     }
@@ -264,7 +259,6 @@
         color: #b22222;
         text-decoration: none;
         font-size: 0.9rem;
-        
     }
 
     .content-1 .box-3 .link a:hover{
@@ -329,7 +323,6 @@
         padding-bottom: 1.5rem;
         text-transform: uppercase;
         font-size: 1.2rem;
-        line-height: 1.5rem;
     }
 
     .content-3 .form .form-item{
@@ -354,7 +347,7 @@
     }
 
     .content-3 .form-item textarea{
-        height: 3rem;
+        height: 5rem;
         font-size: 1rem;
     }
 
@@ -400,7 +393,7 @@
     }
 
     .footer{
-        padding: 1rem 0;
+        padding: 0.2rem 0;
         text-align: center;
         font-size: 0.7rem;
     }
