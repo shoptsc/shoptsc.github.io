@@ -49,7 +49,7 @@ const phone = document.getElementById('phone');
 
 form.addEventListener('submit', checkInput);
 
-function checkInput(){
+function checkInput(e){
     // get values from the inputs
     const nameValue = name.value.trim();
     const emailValues = email.value.trim();
@@ -58,20 +58,11 @@ function checkInput(){
      if (nameValue === ''){
         //show error
         //add error class
-        setErrorFor(name, 'Name cannot be blank, please enter your name')
+        setErrorFor(name, 'please enter a valid name')
+        e.preventDefault();
       }else{
         // add success class
         setSuccessFor(name);
-      }
-
-
-       if (emailValues === ''){
-        //show error
-        //add error class
-        setErrorFor(email, 'Please enter a valid email')
-      }else{
-        // add success class
-        setSuccessFor(email);
       }
 
       let phone_digit = /^[0-9]+$/;
@@ -79,9 +70,21 @@ function checkInput(){
         //show error
         //add error class
         setErrorFor(phone, 'please enter a valid phone number')
+        e.preventDefault();
       }else{
         // add success class
         setSuccessFor(phone);
+      }
+
+
+       if (emailValues === ''){
+        //show error
+        //add error class
+        setErrorFor(email, 'Please enter a valid email')
+        e.preventDefault();
+      }else{
+        // add success class
+        setSuccessFor(email);
       }
 
 }
@@ -102,11 +105,6 @@ function setSuccessFor(input){
     const formControl = input.parentElement;
     formControl.className = 'form-item success';
 }
-
-
-
-
-
 
 
 
