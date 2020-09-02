@@ -40,3 +40,106 @@ function showSlides() {
     setTimeout(showSlides, 5000);
 
 }
+
+
+const form = document.querySelector('.form');
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const phone = document.getElementById('phone');
+
+form.addEventListener('submit', checkInput);
+
+function checkInput(e){
+    e.preventDefault();
+    // get values from the inputs
+    const nameValue = name.value.trim();
+    const emailValues = email.value.trim();
+    const phoneValues = phone.value.trim();
+
+     if (nameValue === ''){
+        //show error
+        //add error class
+        setErrorFor(name, 'Name cannot be blank, please enter your name')
+      }else{
+        // add success class
+        setSuccessFor(name);
+      }
+
+
+       if (emailValues === ''){
+        //show error
+        //add error class
+        setErrorFor(email, 'Please enter a valid email')
+      }else{
+        // add success class
+        setSuccessFor(email);
+      }
+
+      let phone_digit = /^[0-9]+$/;
+      if (phoneValues === ''||!(phoneValues.match(phone_digit))){
+        //show error
+        //add error class
+        setErrorFor(phone, 'please enter a valid phone number')
+      }else{
+        // add success class
+        setSuccessFor(phone);
+      }
+
+}
+
+
+function setErrorFor(input, message){
+    const formControl = input.parentElement;
+    const small = formControl.querySelector('small');
+
+    // add error message inside small
+    small.innerText = message;
+
+    //add error class
+    formControl.className = 'form-item error';
+}
+
+function setSuccessFor(input){
+    const formControl = input.parentElement;
+    formControl.className = 'form-item success';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+function validate(e){
+    e.preventDefault();
+    const name_input = document.querySelector('#name').value;
+    const phone_input = document.getElementById('phone').value;
+    const email_input = document.getElementById('email').value;
+
+    if (name_input === ''){
+        name.classList.remove('alert-hide', 'hide');
+        name.classList.add('alert-show' ,'show');
+
+    }
+//    console.log(name);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
