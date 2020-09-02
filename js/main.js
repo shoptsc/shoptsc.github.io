@@ -49,8 +49,7 @@ const phone = document.getElementById('phone');
 
 form.addEventListener('submit', checkInput);
 
-function checkInput(e){
-    e.preventDefault();
+function checkInput(){
     // get values from the inputs
     const nameValue = name.value.trim();
     const emailValues = email.value.trim();
@@ -105,30 +104,6 @@ function setSuccessFor(input){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-function validate(e){
-    e.preventDefault();
-    const name_input = document.querySelector('#name').value;
-    const phone_input = document.getElementById('phone').value;
-    const email_input = document.getElementById('email').value;
-
-    if (name_input === ''){
-        name.classList.remove('alert-hide', 'hide');
-        name.classList.add('alert-show' ,'show');
-
-    }
-//    console.log(name);
-
-}
 
 
 
