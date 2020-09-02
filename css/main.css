@@ -375,18 +375,29 @@
     .form-item small{
         visibility: hidden;
         position: absolute;
-        bottom: -15px;
+        bottom: -20px;
         left: 0;
     }
 
     .form-item.error small{
         color: #e74c3c;
         visibility: visible;
+        font-size: 0.8rem;
     }
 
     .content-3 .form-item textarea{
         height: 5rem;
         font-size: 1rem;
+    }
+
+    .form-item .file{
+        padding-bottom: 20px;
+    }
+
+    .form-item .file #file{
+        width: 100%;
+        padding: 0 5px ;
+        border: none;
     }
 
     #button{
