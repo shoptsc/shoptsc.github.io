@@ -69,7 +69,7 @@ function checkInput(e){
       if (phoneValues === ''||!(phoneValues.match(phone_digit))){
         //show error
         //add error class
-        setErrorFor(phone, 'please enter a valid phone number')
+        setErrorFor(phone, 'please enter a valid number')
         e.preventDefault();
       }else{
         // add success class
