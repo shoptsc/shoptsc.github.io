@@ -63,6 +63,7 @@ function checkInput(e){
       }else{
         // add success class
         setSuccessFor(name);
+        e.preventDefault()
       }
 
       let phone_digit = /^[0-9]+$/;
@@ -74,6 +75,7 @@ function checkInput(e){
       }else{
         // add success class
         setSuccessFor(phone);
+        e.preventDefault();
       }
 
 
@@ -85,6 +87,7 @@ function checkInput(e){
       }else{
         // add success class
         setSuccessFor(email);
+        e.preventDefault()
       }
 
 }
