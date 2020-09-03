@@ -71,7 +71,7 @@ function checkInput(e){
       }
 
       let phone_digit = /^[0-9]+$/;
-      if (phoneValues === ''||!(phoneValues.match(phone_digit))){
+      if (phoneValues === ''||!(phoneValues.match(phone_digit)) || phoneValues.length != 11){
         //show error
         //add error class
         setErrorFor(phone, 'please enter a valid phone number')
@@ -81,12 +81,15 @@ function checkInput(e){
         setSuccessFor(phone);
       }
 
-
-       if (emailValues === ''){
+        atpos = emailValues.indexOf("@");
+        dotpos = emailValues.lastIndexOf(".");
+       if (emailValues === '' || (atpos < 1|| (dotpos - atpos < 2))){
         //show error
         //add error class
-        setErrorFor(email, 'Please enter a valid email')
-        e.preventDefault();
+
+            setErrorFor(email, 'Please enter a valid email')
+            e.preventDefault();
+
       }else{
         // add success class
         setSuccessFor(email);
