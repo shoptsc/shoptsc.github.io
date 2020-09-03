@@ -46,14 +46,19 @@ const form = document.querySelector('.form');
 const name = document.getElementById('name');
 const email = document.getElementById('email');
 const phone = document.getElementById('phone');
+const message = document.getElementById('message');
+const file = document.getElementById('file');
 
 form.addEventListener('submit', checkInput);
+form.addEventListener('input', checkInput);
 
 function checkInput(e){
     // get values from the inputs
     const nameValue = name.value.trim();
     const emailValues = email.value.trim();
     const phoneValues = phone.value.trim();
+    const messageValues = message.value.trim();
+    const fileValue = file.value;
 
      if (nameValue === ''){
         //show error
@@ -63,19 +68,17 @@ function checkInput(e){
       }else{
         // add success class
         setSuccessFor(name);
-        
       }
 
       let phone_digit = /^[0-9]+$/;
       if (phoneValues === ''||!(phoneValues.match(phone_digit))){
         //show error
         //add error class
-        setErrorFor(phone, 'please enter a valid number')
+        setErrorFor(phone, 'please enter a valid phone number')
         e.preventDefault();
       }else{
         // add success class
         setSuccessFor(phone);
-        
       }
 
 
@@ -87,8 +90,30 @@ function checkInput(e){
       }else{
         // add success class
         setSuccessFor(email);
-       
       }
+
+
+        if (messageValues === ''){
+        //show error
+        //add error class
+        setErrorFor(message, 'please drop a message')
+        e.preventDefault();
+      }else{
+        // add success class
+        setSuccessFor(message);
+      }
+
+
+        if (fileValue === ''){
+        //show error
+        //add error class
+        setErrorFor(file, 'please upload a picture')
+        e.preventDefault();
+      }else{
+        // add success class
+        setSuccessFor(file);
+      }
+
 
 }
 
