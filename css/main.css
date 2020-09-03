@@ -347,11 +347,11 @@
         border: 1px solid #708090
     }
 
-    .form-item.success input{
+    .form-item.success input, .form-item.success textarea{
         border-color:#2ecc71 ;
     }
 
-    .form-item.error input{
+    .form-item.error input, .form-item.error textarea{
         border-color: #e74c3c;
     }
 
@@ -390,15 +390,20 @@
         font-size: 1rem;
     }
 
+    #form-item{
+        padding-bottom: 30px;
+    }
+
     .form-item .file{
         padding-bottom: 20px;
     }
 
     .form-item .file #file{
         width: 100%;
-        padding: 0 5px ;
+        padding: 0 5px;
         border: none;
     }
+
 
     #button{
         text-transform: uppercase;
