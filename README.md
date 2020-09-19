@@ -1,2 +1,2 @@
 # shoptsc.github.io
-A calculator for calculating power
+A simple calculator
