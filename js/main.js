@@ -1,33 +1,28 @@
-const button = document.getElementById('button');
 
-button.addEventListener('click', calculate);
+const button = document.querySelectorAll('.keys');
+const input = document.getElementById("input");
+const equal = document.getElementById("equal");
+const reset = document.querySelector('.reset');
 
-function symbolForce(value){
-    value = Math.ceil(value * 100)/100;
-    return value + ' N';
+
+for (i of button){
+  i.addEventListener('click', (e) =>{
+    number = e.target.dataset.num;
+    input.value += number;
+  })
 }
 
-function symbolWork(value){
-    value = Math.ceil(value * 100)/100;
-    return value + ' J';
+equal.addEventListener('click', equate);
+function equate(e){
+  let phone_digit = /^[0-9]+$/;
+  if (input.value ===''|| !((input.value).match(phone_digit))){
+    input.value = 'please enter a value'
+  } else{
+    let answer = eval(input.value);
+    input.value = answer;
+  }
 }
 
-function symbolPower(value){
-    value = Math.ceil(value * 100)/100;
-    return value + ' J/S';
-}
-
-function calculate(){
-    let mass = document.getElementById('mass').value;
-    let accelerate = document.getElementById('speed').value;
-    let distance = document.getElementById('dist').value;
-    let time = document.getElementById('timing').value;
-
-    let force = mass * accelerate;
-    let work = force * distance;
-    let power = work / time;
-
-    document.getElementById('force').innerHTML = symbolForce(force);
-    document.getElementById('work').innerHTML = symbolWork(work);
-    document.getElementById('power').innerHTML = symbolPower(power);
-}
+reset.addEventListener('click', (e) =>{
+    input.value = ""
+})
