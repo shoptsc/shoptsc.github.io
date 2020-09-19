@@ -14,8 +14,7 @@ for (i of button){
 
 equal.addEventListener('click', equate);
 function equate(e){
-  let phone_digit = /^[0-9].+$/;
-  if (input.value ===''|| !((input.value).match(phone_digit))){
+  if (input.value ===''){
     input.value = 'please enter a value'
   } else{
     let answer = eval(input.value);
