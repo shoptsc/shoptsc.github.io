@@ -25,7 +25,9 @@
     color: #f4f4f4;
     padding: 0.5rem 0;
 }
-
+.faqs p{
+    font-size: 0.5rem;
+}    
 .faqs .open {
     display: none;
     font-family: 'Kaushan Script', cursive;
