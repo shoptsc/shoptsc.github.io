@@ -15,7 +15,7 @@
 .faqs h3 {
     background: #999;
     color: #f4f4f4;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     text-align: center;
     padding: 0.5rem 0.5rem;
 }
@@ -29,7 +29,7 @@
 .faqs .open {
     display: none;
     font-family: 'Kaushan Script', cursive;
-    font-size: 0.5rem;
+    font-size: 0.3rem;
     padding-bottom: 1rem;
     font-style: italic;
 }
