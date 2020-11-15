@@ -1,12 +1,11 @@
 @import "main.css";
-
-.content{
+.content {
     width: 100%;
-    min-height:100vh;
+    min-height: 100vh;
     background: #708090;
 }
 
-.content-1{
+.content-1 {
     width: 80%;
     margin: auto;
     text-align: center;
@@ -14,23 +13,22 @@
     line-height: 1.5rem;
 }
 
-.content-1 h1{
+.content-1 h1 {
     color: #333;
     text-transform: uppercase;
     padding: 3rem 0 2rem;
-
     word-spacing: 10px;
 }
 
-.content-1 p{
-    font-family: 'Kaushan Script', cursive;
+.content-1 p {
+    /* font-family: 'Kaushan Script', cursive; */
     color: #f4f4f4;
-    font-size: 0.8rem;
-    font-style: italic;
+    font-size: 0.9rem;
+    /* font-style: italic; */
 }
 
-@media (min-width: 750px){
-    .content-1{
+@media (min-width: 750px) {
+    .content-1 {
         padding: 0;
     }
 }

@@ -1,48 +1,49 @@
 @import "main.css";
-
-.content{
+.content {
     width: 100%;
     margin: 100px auto;
     min-height: 75vh;
 }
 
-.faqs{
+.faqs {
     width: 80%;
     margin: auto;
     color: #708090;
     line-height: 1rem;
 }
 
-.faqs h3{
-
-     background: #bc8f8f;
+.faqs h3 {
+    background: #999;
     color: #f4f4f4;
     font-size: 1rem;
     text-align: center;
     padding: 0.5rem 0.5rem;
 }
 
-.faqs h3:hover{
-    background: #999;
+.faqs h3:hover {
+    background: #bc8f8f;
     color: #f4f4f4;
     padding: 0.5rem 0;
 }
 
-.faqs p{
+.faqs .open {
+    display: none;
     font-family: 'Kaushan Script', cursive;
     font-size: 0.8rem;
     padding-bottom: 1rem;
 }
 
-@media (min-width: 750px){
-
-
-    .faqs{
+@media (min-width: 750px) {
+    .faqs {
         padding-left: 30px;
     }
-
-    .faqs h3{
+    .faqs h3 {
         font-size: 0.8rem;
+        width: 65%;
+        margin: 2rem auto;
     }
-
+    .faqs p {
+        width: 65%;
+        margin: auto;
+    }
 }

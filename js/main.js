@@ -6,12 +6,12 @@ const logo = document.querySelector('.logo');
 stroke.addEventListener('click', showMenu);
 close.addEventListener('click', closeMenu)
 
-function showMenu(){
-        a.setAttribute('style', 'display:block;');
-        if (a.style.display === 'block'){
-            logo.classList.remove('logo');
-            logo.classList.add('small-logo');
-        }
+function showMenu(e){
+  a.style.display = 'block'
+  if (a.style.display === 'block'){
+      logo.classList.remove('logo');
+      logo.classList.add('small-logo');
+  }
 }
 
 function closeMenu(){
@@ -74,7 +74,7 @@ function checkInput(e){
       if (phoneValues === ''||!(phoneValues.match(phone_digit)) || phoneValues.length != 11){
         //show error
         //add error class
-        setErrorFor(phone, 'please enter a valid number')
+        setErrorFor(phone, 'please enter a valid phone number')
         e.preventDefault();
       }else{
         // add success class
@@ -136,14 +136,3 @@ function setSuccessFor(input){
     const formControl = input.parentElement;
     formControl.className = 'form-item success';
 }
-
-
-
-
-
-
-
-
-
-
-
