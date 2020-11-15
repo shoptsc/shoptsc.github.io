@@ -36,6 +36,7 @@
 
 .faqs p {
     font-style: italic;
+    font-size: 0.3rem;
 }
 
 @media (min-width: 750px) {
