@@ -15,7 +15,7 @@
 .faqs h3 {
     background: #999;
     color: #f4f4f4;
-    font-size: 1rem;
+    font-size: 0.5rem;
     text-align: center;
     padding: 0.5rem 0.5rem;
 }
@@ -43,7 +43,7 @@
         padding-left: 30px;
     }
     .faqs h3 {
-        font-size: 0.5rem;
+        font-size: 0.8rem;
         width: 65%;
         margin: 2rem auto;
     }
