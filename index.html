@@ -153,27 +153,27 @@
 
             <div class=sub-content>
 
-                <form class="form">
+                <form class="form" name="contact" method="POST" action="/contact/success" data-netlify="true">
 
                     <h1 class="form-head">enquiries form</h1>
 
                     <div class="form-item">
                         <label for="name">Name:</label>
-                        <input type="text" name="name" id="name" placeholder="e.g Audu oluwajuwon"><i class="fa fa-check-circle"></i>
+                        <input type="text" name="Name: " id="name" placeholder="e.g Audu oluwajuwon"><i class="fa fa-check-circle"></i>
                         <i class="fa fa-exclamation-circle"></i>
                         <small>Error message</small>
                     </div>
 
                     <div class="form-item">
                         <label for="phone">Phone:</label>
-                        <input type="tel" name="phone" id="phone" placeholder="08123456789"><i class="fa fa-check-circle"></i>
+                        <input type="tel" name="Phone_Number: " id="phone" placeholder="08123456789"><i class="fa fa-check-circle"></i>
                         <i class="fa fa-exclamation-circle"></i>
                         <small>Error message</small>
                     </div>
 
                     <div class="form-item">
                         <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" placeholder="abc@gmail.com">
+                        <input type="email" name="Email: " id="email" placeholder="abc@gmail.com">
                         <i class="fa fa-check-circle"></i>
                         <i class="fa fa-exclamation-circle"></i>
                         <small>Error message</small>
@@ -181,7 +181,7 @@
 
                     <div class="form-item">
                         <label for="message">Message:</label>
-                        <textarea id="message" placeholder="Drop a message here"></textarea>
+                        <textarea id="message" name="Message: " placeholder="Drop a message here"></textarea>
                         <i class="fa fa-check-circle"></i>
                         <i class="fa fa-exclamation-circle"></i>
                         <small>Error message</small>
@@ -190,7 +190,7 @@
                     <div class="form-item" id="form-item">
                         <label for="file">Upload a Picture of Style you want to make</label>
                         <div class="file">
-                            <input type="file" id="file">
+                            <input type="file" id="file" name="Style: ">
                             <small>Error message</small>
                         </div>
 
